@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddStudent = () => {
-  return <div>AddStudent</div>;
+  return <>AddStudent</>;
 };
 
 export default AddStudent;

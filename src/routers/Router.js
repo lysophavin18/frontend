@@ -1,3 +1,5 @@
+// routers/Router.js
+
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
@@ -5,6 +7,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import AddStudent from "../pages/AddStudent";
+import StudentScores from "../components/Student-Score/StudentScore"; // Corrected import name
 
 const Routers = () => {
   return (
@@ -14,7 +17,8 @@ const Routers = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/profile" element={<Profile />} />
-      <Route path="addstudent" element={<AddStudent />} />
+      <Route path="/addstudent" element={<AddStudent />} />
+      <Route path="/studentscore" element={<StudentScores />} />
     </Routes>
   );
 };

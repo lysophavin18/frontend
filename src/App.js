@@ -1,21 +1,14 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "./components/Footer/footer";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
-import Login from "./pages/Login";
-import AddStudent from "./pages/AddStudent";
+import { BrowserRouter } from "react-router-dom";
+import Routers from "./routers/Router";
+import { Container, Row } from "react-bootstrap";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Login />
-      <Dashboard />
-      <Register />
-      <AddStudent />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routers />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
